@@ -1,10 +1,17 @@
+import Button from "@/components/Button";
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 
 const index = () => {
   return (
-    <View>
-      <Text className="text-green-500 text-lg text-center">Hellow World</Text>
+    <View className="flex-1 bg-green-200 items-center  justify-center">
+      <View className=" pt-14">
+        <Image source={require("@/assets/images/background-image.png")} />
+      </View>
+      <View className="basis-1/2 items-center">
+        <Button label="Choose a photo" />
+        <Button label="Use this photo" />
+      </View>
     </View>
   );
 };
